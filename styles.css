@@ -788,6 +788,32 @@ nav {
   color: var(--text-light);
 }
 
+.videos__container {
+  
+}
+
+.video-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+.video-container video {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin-right: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.video-container::-webkit-scrollbar {
+  display: none;
+}
+
 .footer {
   background-color: var(--primary-color);
 }
