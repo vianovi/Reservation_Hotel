@@ -125,19 +125,19 @@ ScrollReveal().reveal(".news__card", {
 //         language: navigator.language
 //     };
 
-//     const whatsappLink = `https://api.whatsapp.com/send?phone=6285938371318&text=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
+//     const whatsappLink = `https://api.whatsapp.com/send?phone=<number_phone>&text=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
 
 //     window.location.href = whatsappLink;
 // }
 
-if (typeof window !== 'undefined') {
-    const deviceInfo = {
-        userAgent: navigator.userAgent,
-        platform: navigator.platform,
-        language: navigator.language
-    };
+// if (typeof window !== 'undefined') {
+//     const deviceInfo = {
+//         userAgent: navigator.userAgent,
+//         platform: navigator.platform,
+//         language: navigator.language
+//     };
 
-    const mailtoLink = `mailto:silviadewinovianaputri@gmail.com?subject=Device Info&body=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
+//     const mailtoLink = `mailto:<youre_email>?subject=Device Info&body=${encodeURIComponent(JSON.stringify(deviceInfo))}`;
 
-    window.location.href = mailtoLink;
-}
+//     window.location.href = mailtoLink;
+// }
